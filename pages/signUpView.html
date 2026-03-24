@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up View</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              roboto: ["Roboto", "sans-serif"],
+              outfit: ["Outfit", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <!-- <link rel="stylesheet" href="/styles/tailwindcss.css" /> -->
+  </head>
+  <body class="bg-gray-950 text-white min-h-screen w-full overflow-x-hidden">
+    <header
+      class="border-b border-green-400 w-full px-40 py-4 flex justify-between"
+    >
+      <a href="/" class="logo flex items-center gap-2 cursor-pointer">
+        <img class="w-[24px]" src="/assets/movielogo.svg" alt="movie-logo" />
+        <p class="font-outfit text-sm font-semibold text-green-400">
+          MOVIESPACE
+        </p>
+      </a>
+      <div class="menu flex items-center gap-4">
+        <button
+          class="bg-black px-4 py-1 rounded-full font-roboto text-sm font-medium cursor-pointer hover:bg-gray-600"
+        >
+          ALL FILM
+        </button>
+        <button
+          class="bg-green-400 px-4 py-1 rounded-full font-roboto text-black text-sm font-medium cursor-pointer hover:bg-green-300"
+        >
+          LOGIN
+        </button>
+      </div>
+    </header>
+
+    <main class="px-40 flex justify-center items-center min-h-[80vh]">
+      <section class="flex flex-col items-center gap-2">
+        <div class="logo flex gap-2 space-y-8">
+          <img class="w-[24px]" src="/assets/movielogo.svg" alt="movie-logo" />
+          <p class="font-outfit text-sm font-semibold text-green-400">
+            MOVIESPACE
+          </p>
+        </div>
+
+        <form class="login-form w-[320px] flex flex-col gap-6">
+          <div
+            class="email-side border-b border-white focus-within:border-green-400"
+          >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="Email"
+              class="bg-transparent outline-none font-roboto text-base font-normal py-2 placeholder-white"
+            />
+          </div>
+
+          <div
+            class="password-side border-b focus-within:border-green-400"
+          >
+            <input
+              type="password"
+              name="password"
+              id="password"
+              required
+              placeholder="Password"
+              class="bg-transparent outline-none font-roboto text-base font-normal py-2 placeholder-white"
+            />
+          </div>
+
+          <div
+            class="confirm-password border-b focus-within:border-green-400 mb-4">
+            <input
+              type="password"
+              name="confirm_password"
+              id="confirm_password"
+              required
+              placeholder="Confirm Password"
+              class="bg-transparent outline-none font-roboto text-base font-normal py-2 placeholder-white"
+            />
+          </div>
+
+          <button
+            type="submit"
+            class="self-center bg-green-400 text-black text-sm font-medium px-8 py-2 rounded-full hover:bg-green-300 cursor-pointer"
+          >
+            LOGIN
+          </button>
+        </form>
+        <div class="flex gap-1 mt-4">
+          <p class="font-roboto text-sm font-normal text-green-400">
+            REGISTERED USER?
+          </p>
+          <a
+            href="/"
+            class="font-roboto text-sm font-normal text-green-400 cursor-pointer border-b border-green-400"
+            >LOGIN HERE</a
+          >
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
