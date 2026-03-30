@@ -76,7 +76,7 @@ function renderMovies(movies) {
 
             <div class="flex gap-2 items-center">
                 <img class="w-[28px] sm:w-[34px] h-[14px] sm:h-[16px] block" src="../assets/IMDB_Logo_2016 1.svg" alt="imdb-logo">
-                <span class="flex text-xs sm:text-sm gap-2 leading-none">${rating} <img class="w-[16px] sm:w-[24px]" src="../assets/v-icon.svg" alt="icon-star"></span>
+                <span class="flex text-xs sm:text-sm gap-2 leading-none">${rating} <img class="w-[12px] sm:w-[16px]" src="../assets/v-icon.svg" alt="icon-star"></span>
             </div>
 
             <p class="font-roboto hidden sm:block text-base font-normal text-gray-400 leading-relaxed sm:line-clamp-2 lg:line-clamp-3">${movie.overview}
