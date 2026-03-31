@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (isValid) {
                 const saved = saveUser({email, password})
                 if (saved){
-                    window.location.href = 'login.html';
+                    window.location.href = '/pages/loginView.html';
                 }
             }
             })
