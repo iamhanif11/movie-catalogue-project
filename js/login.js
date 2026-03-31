@@ -7,10 +7,10 @@ function() {
     const emailError = document.getElementById('emailError');
     const passwordError = document.getElementById('passwordError');
 
-    function showError(element, message){
-        if (element){
-            element.textContent = message
-            element.classList.remove('invisible');
+    function showError(e, message){
+        if (e){
+            e.textContent = message
+            e.classList.remove('invisible');
         }
     }
 
